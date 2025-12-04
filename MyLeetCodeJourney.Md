@@ -7,6 +7,6 @@
 - 符號說明：✅ (已完成) / 🔁 (需複習) / 🚧 (卡關中)
   | # | 題目 (Title) | 類別 (Tag) | 難度 | 狀態 | 備註 |
   | ---- | ------------------------------------------------------ | ------------------ | ------ | --------- | ------------------ |
-  | 0001 | [Two Sum](./arrays/0001-two-sum.py) | Array / Hash Table | Easy | ✅ Done | 經典 Hash Map 應用 |
+  | 0001 | [Two Sum](./notes/arrays/arrays/0001-two-sum.py) | Array / Hash Table | Easy | ✅ Done | 經典 Hash Map 應用，練習語法 |
   | 0020 | [Valid Parentheses](./stack/0020-valid-parentheses.py) | Stack | Easy | 🔁 Review | 需複習 Stack 特性 |
   | 0015 | [3Sum](./arrays/0015-3sum.py) | Array | Medium | 🚧 Stuck | 邊界條件還沒搞懂 |

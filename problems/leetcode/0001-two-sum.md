@@ -38,7 +38,7 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 
 ## 程式碼
 
-(./)
+[link](../../notes/arrays/0001-two-sum.pyleetcode/)
 
 ```python
 class Solution:

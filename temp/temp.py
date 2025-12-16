@@ -1,6 +1,11 @@
-names = ["Alice", "Bob", "Charlie"]
-scores = [85, 92, 78]
+class Solution:
+    def gcdOfStrings(self, str1: str, str2: str) -> str:
+        len1 = len(str1)
+        len2 = len(str2)
 
-# 寫法：注意 for 迴圈裡的括號 (name, score)
-for i, (name, score) in enumerate(zip(names, scores)):
-    print(f"第 {i+1} 名: {name} 考了 {score} 分")
+        return len2
+
+
+if __name__ == '__main__':
+    s = Solution()
+    print(s.gcdOfStrings("ABCABC", "ABC"))

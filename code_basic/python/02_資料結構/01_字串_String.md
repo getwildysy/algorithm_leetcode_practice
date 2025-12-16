@@ -65,6 +65,8 @@ print(s.replace("World", "Python")) # "Hello Python"
 print(s.count("l"))       # 3 (計算出現次數)
 print(s.startswith("He")) # True
 print(s.endswith("ld"))   # True
+print(s.index("World"))   # 6 (類似 find，但找不到會噴錯 ValueError)
+print(s.rfind("l"))       # 9 (從右邊開始找，回傳最後出現的索引)
 ```
 
 ### 分割與結合
@@ -85,6 +87,27 @@ s = "  Hello  "
 print(s.strip())  # "Hello" (去除頭尾空白)
 print(s.lstrip()) # "Hello  " (去除左邊空白)
 print(s.rstrip()) # "  Hello" (去除右邊空白)
+```
+
+### 字串性質檢查
+
+```python
+s = "Python3"
+print(s.isalnum()) # True (是否只包含字母和數字)
+print(s.isalpha()) # False (是否只包含字母)
+print(s.isdigit()) # False (是否只包含數字)
+print("   ".isspace()) # True (是否只包含空白)
+```
+
+### 字串排版與對齊
+
+```python
+s = "Python"
+print(s.center(10, "*")) # "**Python**" (置中，不足補*)
+print(s.ljust(10, "-"))  # "Python----" (靠左，不足補-)
+print(s.rjust(10, "-"))  # "----Python" (靠右，不足補-)
+print(s.zfill(10))       # "0000Python" (補零，常用於數字字串)
+```
 ```
 
 ## 4. 格式化字串 (String Formatting)

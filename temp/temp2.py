@@ -1,5 +1,3 @@
-
-
 def find_repeat_pattern(str):
     # 將字串加倍：ABCABCABCABC
     double_str = str+str

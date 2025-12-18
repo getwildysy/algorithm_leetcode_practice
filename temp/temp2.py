@@ -1,18 +1,24 @@
-def find_repeat_pattern(str):
-    # 將字串加倍：ABCABCABCABC
-    double_str = str+str
+from typing import List
 
-    # 去掉第一個字元與最後一個字元，避免直接找到原本的自己
-    # 然後找尋 s 第一次出現的位置
-    # index 就是理論上重複單元的長度(因為跳過第一個字元)
-    index = double_str.find(str, 1)
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        nums_1, nums_2 = [], []
 
-    if index != -1 and index < len(str):
-        return str[:index]
-    else:
-        return str  # 如果沒有重複模式，回傳原字串
+        for i in range(len(nums)):
+            if nums[i] != 0:
+                nums_1.append(nums[i])
+            else:
+                nums_2.append(nums[i])
+        
+        # 使用切片賦值 (Slice Assignment) 來修改原始 List
+        nums[:] = nums_1 + nums_2
 
-
-str = "ABAB"
-
-print(find_repeat_pattern(str))
+if __name__ == "__main__":
+    solution = Solution()
+    test_nums = [0, 1, 0, 3, 12]
+    print(f"Before: {test_nums}")
+    solution.moveZeroes(test_nums)
+    print(f"After:  {test_nums}")

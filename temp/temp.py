@@ -1,14 +1,20 @@
 class Solution:
-    def largestAltitude(self, gain):
-        gain.insert(0, 0)
-        print(gain)
-        for i in range(1, len(gain)):
-            gain[i] = gain[i]+gain[i-1]
-        print(max(gain))
+    def findMaxAverage(self, nums, k):
+        total, max, avg = 0, 0, 0
+        total = sum(nums[:k])
+        if len(nums) == k:
+            max = total
+
+        else:
+            for i in range(1, len(nums)-k+1):
+                total = total-nums[i-1]+nums[i+k-1]
+                if total >= max:
+                    max = total
+        avg = max / k
+        print(avg)
 
 
 if __name__ == '__main__':
     s = Solution()
-    gain = [-4, -3, -2, -1, 4, 3, 2]
-
-    s.largestAltitude(gain)
+    nums = [9, 7, 3, 5, 6, 2, 0, 8, 1, 9]
+    s.findMaxAverage(nums, 6)

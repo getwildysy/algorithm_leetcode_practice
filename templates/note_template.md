@@ -1,26 +1,19 @@
-# 主題名稱（例如 Two Pointers）
+# 題目名稱
 
-## 核心概念
+## 題目類型
 
-（用自己的話簡述觀念）
+Array / DP / Tree / Hash Map / Graph...
 
-## 常見題型
+## 題目摘要
 
-- 題型 1
-- 題型 2
-- 題型 3
+（用自己的話重新敘述題目）
 
-## 解題模式（pattern）
+## 我的解題思路
 
-（例如：左右指標 → 收縮 → 判斷）
+（如何想到？是否先用暴力再優化？）
 
-## 常犯錯誤
+## 程式碼
 
-- 錯誤 1
-- 錯誤 2
-
-## 代表題目
-
-- LeetCode 167 Two Sum II
-- LeetCode 15 3Sum
-- LeetCode 125 Valid Palindrome
+```python
+# your solution
+```

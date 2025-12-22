@@ -1,6 +1,7 @@
 Hash table 觀念
 
 第一步：建立一個空的 Hash 表
+可以使用字典或是集合來建立 hash 表。
 
 ```python
 # 建立一個空字典 (Hash Table)
@@ -10,6 +11,11 @@ scores = {}
 
 print("目前的聯絡簿:", scores)
 # 輸出: 目前的聯絡簿: {}
+```
+
+```python
+set1 = set(nums1)
+set2 = set(nums2)
 ```
 
 第二步：新增資料 (Create)
@@ -58,6 +64,8 @@ print("目前的表:", scores)
 
 第四步半：檢查資料是否存在
 在做動作之前，通常會先問「這個人在不在名單裡？」
+
+python 的查詢是查詢鍵存不存在，有的話，回傳值回來，不是查詢值，回傳鍵回來。
 
 ```python
 student_name = "胖虎"

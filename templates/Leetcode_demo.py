@@ -5,6 +5,7 @@ from typing import List, Optional
 # 題目名稱：
 # ==========================================
 
+
 class Solution:
     def solveProblem(self, nums: List[int], target: int) -> List[int]:
         """
@@ -18,6 +19,7 @@ class Solution:
                 return [hashmap[complement], i]
             hashmap[num] = i
         return []
+
 
 # ==========================================
 # 本機測試區 (Local Test Bench)
@@ -37,7 +39,7 @@ if __name__ == "__main__":
     for i, (inputs, expected) in enumerate(test_cases):
         # 呼叫你的方法 (根據題目更改方法名稱)
         result = sol.solveProblem(**inputs)
-        
+
         # 驗證結果
         status = "✅ PASS" if result == expected else "❌ FAIL"
         print(f"Case {i+1}: {status}")

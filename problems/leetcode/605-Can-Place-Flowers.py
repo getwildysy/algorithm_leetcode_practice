@@ -7,7 +7,6 @@ class Solution:
         zero_blocks = []  # 用來存每一段 0 的長度
        # 核心技巧：在前後各補一個 0，把邊界問題變成中間問題
         # 這樣無論是 [0,0,1] 還是 [1,0,0]，都會被當作中間有連續 0 的情況處理
-
         padded_flowerbed = [0] + flowerbed + [0]
         for num in padded_flowerbed:
             if num == 0:
